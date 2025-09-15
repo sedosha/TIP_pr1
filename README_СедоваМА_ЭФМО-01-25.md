@@ -29,6 +29,7 @@ git --version
 ```
 go mod init example.com/helloapi
 ```
+
 «Паспорт» проекта с именем модуля и версией Go.
 <img width="537" height="219" alt="image" src="https://github.com/user-attachments/assets/8bb3487f-6e19-49b6-bea7-2ef38ae91288" />
 
@@ -103,6 +104,13 @@ curl http://localhost:8080/user
 go build -o helloapi.exe ./cmd/server
 .\helloapi.exe
 ```
+### Код-стайл и базовые проверки
+```
+go fmt ./...
+go vet ./...
+```
+
+<img width="689" height="133" alt="image" src="https://github.com/user-attachments/assets/30d758bb-2aa4-40e6-8695-2dcfa8289ce6" />
 
 ### Запуск на другом порту
 Порт можно изменить через переменную окружения `APP_PORT`.
