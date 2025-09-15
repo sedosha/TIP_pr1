@@ -34,7 +34,7 @@ go mod init example.com/helloapi
 
 ### Структура проекта
 
-<img width="212" height="221" alt="image" src="https://github.com/user-attachments/assets/39c90de3-a8d7-4330-b09b-d173abd53fb9" />
+<img width="858" height="318" alt="image" src="https://github.com/user-attachments/assets/dee1008f-3084-4572-96ef-697cd18c8d8a" />
 
 ### Минимальный HTTP-сервер 
 ```
