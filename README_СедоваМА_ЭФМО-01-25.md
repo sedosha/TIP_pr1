@@ -87,17 +87,16 @@ go mod tidy
 ```bash
 go run ./cmd/server
 ```
-<img width="635" height="63" alt="image" src="https://github.com/user-attachments/assets/8c2e834c-b5df-4d4b-a5e4-ed5e23b3408a" />
+<img width="649" height="62" alt="image" src="https://github.com/user-attachments/assets/346d15e1-4e34-4e33-b048-8bcd327cb8f8" />
 
 В другом окне PowerShell проверяем эндпоинты:
 ```
 curl http://localhost:8080/hello
 curl http://localhost:8080/user
 ```
-1) <img width="833" height="528" alt="image" src="https://github.com/user-attachments/assets/6d6680a7-6e1f-4774-9e15-1dbb1718f79e" />
-2) <img width="858" height="873" alt="image" src="https://github.com/user-attachments/assets/a71b8c00-d70b-40df-a0eb-652c350aca87" />
+1) <img width="1193" height="733" alt="image" src="https://github.com/user-attachments/assets/dd67abad-57fc-41be-9187-0112eb96b1f1" />
 
-
+2) <img width="1705" height="814" alt="image" src="https://github.com/user-attachments/assets/a03760dc-a32e-45f4-96a2-fed758180b14" />
 
 ### Запуск на другом порту
 Порт можно изменить через переменную окружения `APP_PORT`.
