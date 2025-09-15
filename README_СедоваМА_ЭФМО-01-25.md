@@ -22,7 +22,7 @@
 go version
 git --version
 ```
-<img width="974" height="400" alt="image" src="https://github.com/user-attachments/assets/fc468b3a-4aff-4fd5-9a9f-dba7a54fdfa7" />
+<img width="522" height="124" alt="image" src="https://github.com/user-attachments/assets/c6fb79e6-d8c0-4440-8df7-aa4f3be918c6" />
 
 ### Модуль Go
 
@@ -94,10 +94,8 @@ go run ./cmd/server
 curl http://localhost:8080/hello
 curl http://localhost:8080/user
 ```
-1)
-<img width="833" height="528" alt="image" src="https://github.com/user-attachments/assets/6d6680a7-6e1f-4774-9e15-1dbb1718f79e" />
-2)
-<img width="858" height="873" alt="image" src="https://github.com/user-attachments/assets/a71b8c00-d70b-40df-a0eb-652c350aca87" />
+1) <img width="833" height="528" alt="image" src="https://github.com/user-attachments/assets/6d6680a7-6e1f-4774-9e15-1dbb1718f79e" />
+2) <img width="858" height="873" alt="image" src="https://github.com/user-attachments/assets/a71b8c00-d70b-40df-a0eb-652c350aca87" />
 
 
 
