@@ -1,5 +1,3 @@
-в процессе
-
 ## Практическое занятие №1 Установка и настройка окружения Go.
 
 ### Выполнил: студент группы ЭФМО-01-25 Седова Мария Александровна.
@@ -114,43 +112,18 @@ go vet ./...
 
 ### Запуск на другом порту
 Порт можно изменить через переменную окружения `APP_PORT`.
-
-**Windows (PowerShell):**
-```powershell
+```
 $env:APP_PORT="8081"
 go run ./cmd/server
 ```
+<img width="847" height="104" alt="image" src="https://github.com/user-attachments/assets/bbc0b4d2-d054-4672-b7c6-9c87c15a3693" />
 
-### Примеры HTTP-запросов
-После запуска сервер будет доступен по адресу `http://localhost:PORT`.
+<img width="1241" height="729" alt="image" src="https://github.com/user-attachments/assets/a82dd401-e0ea-4809-b998-54113989474e" />
 
-*   **GET /hello**
-    ```bash
-    curl http://localhost:8080/hello
+### Бонусный эндпоинт
+
     ```
-    Ответ: `Hello, world!`
-
-*   **GET /user**
-    ```bash
-    curl http://localhost:8080/user
-    ```
-    Ответ: `{"id":"a1b2c3d4-...", "name":"Gopher"}`
-
-*   **GET /health** (бонусный эндпоинт)
-    ```bash
     curl http://localhost:8080/health
     ```
-    Ответ: `{"status":"ok", "time":"2023-10-25T15:04:05Z"}`
+<img width="1572" height="751" alt="image" src="https://github.com/user-attachments/assets/9895142b-88a1-4f65-a180-8e2ebaec8697" />
 
-	Примечания по конфигурации (порт, переменные окружения).
-
-3.	Отчётные материалы
-	Скриншоты go version и ответов /hello и /user.
-	Ссылка на репозиторий.
-	
-Итоговая проверка (чек-лист)
-	Репозиторий клонируется, go build проходит без ошибок.
-	go run ./cmd/server запускается, /hello и /user отвечают 200.
-	В go.mod и go.sum зафиксированы зависимости; UUID реально генерируется.
-	README содержит шаги запуска и примеры запросов.
-	Код отформатирован (go fmt), базовая проверка go vet — без критики.
