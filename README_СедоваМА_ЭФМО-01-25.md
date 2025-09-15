@@ -60,7 +60,7 @@ func main() {
 		fmt.Fprintln(w, "Hello, world!")
 	})
 
-	// Пока временный JSON (без UUID — добавим на шаге 4)
+	// Пока временный JSON
 	mux.HandleFunc("/user", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		_ = json.NewEncoder(w).Encode(user{
@@ -84,7 +84,7 @@ go mod tidy
 Появился файл "go.sum".
 
 ### Запуск сервера и быстрая проверка
-```bash
+```
 go run ./cmd/server
 ```
 <img width="649" height="62" alt="image" src="https://github.com/user-attachments/assets/346d15e1-4e34-4e33-b048-8bcd327cb8f8" />
@@ -98,18 +98,18 @@ curl http://localhost:8080/user
 
 2) <img width="1705" height="814" alt="image" src="https://github.com/user-attachments/assets/a03760dc-a32e-45f4-96a2-fed758180b14" />
 
+### Сборка бинарника 
+```
+go build -o helloapi.exe ./cmd/server
+.\helloapi.exe
+```
+
 ### Запуск на другом порту
 Порт можно изменить через переменную окружения `APP_PORT`.
 
 **Windows (PowerShell):**
 ```powershell
 $env:APP_PORT="8081"
-go run ./cmd/server
-```
-
-**Linux/macOS (Bash):**
-```bash
-export APP_PORT="8081"
 go run ./cmd/server
 ```
 
